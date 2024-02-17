@@ -1,0 +1,304 @@
+/*背景*/
+.background{
+    background-image: url(images/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+/*導覽列*/
+.menu{
+    display:none;
+}
+
+header{
+    position: fixed; /* 固定在頁面頂部 */
+    background-color:black;
+    height: 80px;
+    width: 100%;
+    opacity: 0.7;
+}
+header h1 a{
+    font-weight: bold;
+    position: absolute;
+    left: 5vw;
+    top: 0;
+    line-height: 80px;
+    color: white;
+    text-decoration: none;
+}
+header ul{
+    position: absolute;
+    right: 5vw;
+    top: 0;
+    line-height: 80px;
+}
+header li{
+    display: inline;
+    margin-right: 4vw;
+
+}
+header li a{
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+li a:hover{
+    color: rgb(241, 194, 99);
+}
+/*section1*/
+.home{
+    color: white;
+    height: 100vh;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home h2{
+    font-size: 100px;
+    font-weight: bolder;
+    animation: fade-in-up 3s ease-out; /* 淡入向上動畫 */
+}
+.home p{
+    font-size: 20px;
+    color: antiquewhite;
+    margin: 25px 0;
+}
+/*section2*/
+.about-section{
+    background-image: url(images/01.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    height: 100vh;
+    background-color:darkgray;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.about{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.about h2{
+    color: white;
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    opacity: 0.5;
+}
+.about p{
+    font-size: 20px;
+    font-weight: bold;
+    color:aliceblue;
+    text-align:center;
+    line-height: 3em;
+}
+.about-section div{
+    margin-left: 150px;
+    height: 400px;
+    width: 300px;
+}
+.about-section img{
+    border-radius: 20px;
+    height: 100%;
+    width:100%
+   
+
+}
+
+/*section3*/
+.portfolio-section{
+
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+}
+.portfolio-section h2{
+    font-size: 100px;
+    font-weight: bold;
+    margin-top: 400px;
+    margin-bottom: 300px;
+    opacity: 0.5;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.portfolio{
+    margin-bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50% 50%;
+}
+.portfolio img{
+    border: 5px solid rgb(232, 228, 228);
+}
+
+.portfolio-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.portfolio h3{
+    font-size: xx-large;
+    font-weight: bolder;
+    color: aliceblue;
+    text-align: center;
+}
+.portfolio p{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 4em;
+    color: white;
+}
+
+/*頁尾*/
+footer{
+    background-color: black;
+    color:#b7b7b7;
+    height: 80px;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+
+}
+
+
+@keyframes fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }}
+
+    /* 響應式設計 */
+
+    /* 平板專用 */
+    @media (max-width:1300px){
+        .about h2{
+            font-size: 70px;
+        }
+        .about p{
+            font-size: medium;
+        }
+        .about-section div{
+            margin-left: 30px;
+            height: 400px;
+            width: 300px;
+        }
+
+        .about-section div{
+            margin-left: 40px;
+            height: 400px;
+            width: 300px;
+        }
+        .portfolio-section h2{
+            font-size: 70px;
+        }
+
+        .portfolio{
+            display: flex;
+            flex-direction: column;   
+        }
+        .portfolio img{
+            width: 600px;
+            height: 400px;
+            margin-left: 300px;
+            margin-bottom: 50px;
+        }
+        .portfolio-text{
+            margin-left: 100px;
+        }
+
+    }    
+
+    /* 手機專用 */
+    @media (max-width:768px){
+        .menu{
+            display:block;
+            background-color: transparent;
+            color: white;
+            font-size: 40px;
+            position: absolute;
+            top: 5px;
+            left: 80%;
+            border: none;
+            cursor: pointer;
+        }
+        nav{
+            width: 80%;
+            height:calc(100vh - 80px);
+            background-color: gray;
+            position: absolute;
+            top: 80px;
+            left:-100%;
+            transition: .5s;
+        }
+        nav ul{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            border-bottom: 2px solid white;
+        }
+        nav ul a{
+            margin-left: 40%;
+        }
+
+        .home h2{
+            font-size: 60px;
+        }
+        .home p{
+            font-size: 15px;
+        }
+        .about h2{
+            font-size: 50px;
+        }
+        .about p{
+            font-size: medium;
+        }
+        .about-section div{
+            margin-left: 10px;
+            height: 300px;
+            width: 200px;
+        }
+        .portfolio-section h2{
+            font-size: 60px;
+        }
+        .portfolio{
+            display: flex;
+            flex-direction: column;   
+        }
+        .portfolio img{
+            width: 400px;
+            height: 400px;
+            margin-left: 300px;
+            margin-bottom: 50px;
+        }
+        .portfolio-text{
+            margin-left: 100px;
+        }
+
+        #menu_control:checked ~ nav{
+            left: 0;
+        }
+    }

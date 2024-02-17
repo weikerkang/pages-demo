@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>JIANWEI個人簡介</title>
+    <!-- 告訴瀏覽器 網頁編碼是 utf-8 -->
+    <meta charset="UTF-8">
+    <!--控制網頁的縮放 版面寬度為裝置寬度 縮放比為1倍-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 導入bootstrap、AOS和style的css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+<body class="background">
+    <header style="z-index:9999">
+        <input type="checkbox" name="" id="menu_control" style="display: none;">
+        <h1><a href="index.html">JIANWEI</a></h1>
+        <label for="menu_control" class="menu">&#9776;</label>
+        <nav>  
+            <ul>
+                <li><a href="#s2">關於我</a></li>
+                <li><a href="#s3">作品集</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <h2>I'm Jianwei</h2>
+            <p 
+            data-aos="fade"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="2000"
+            data-aos-delay="2000">
+            當我努力成為更好的人時，周遭的一切也會隨著變好</p>
+        </section>
+        <section 
+        id="s2" 
+        class="about-section" 
+        data-aos="fade"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration ="2000"
+        >
+            <div class="about">
+                <h2>ABOUT</h2>
+                <p>本人於義守大學資管系畢業<br/>
+                    有做過遊樂館、電影院、百貨專櫃、電商的打工經驗<br/>
+                    目前剛結訓4個月的不願役<br/>
+                    未來想朝著軟體工程師的方向發展</p>
+            </div>        
+            <div
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="2000"
+            data-aos-delay="1500"
+            >
+                <img src="images/p3.jpg">
+            </div>            
+        </section>
+        <section id="s3" class="portfolio-section">
+            <h2 
+            data-aos="fade"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="1000">
+            Portfolio</h2>
+            <div 
+            class="portfolio"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="1000">
+                <img src="images/03.PNG" width="600px" height="400px" style="margin-right: 300px;">
+                <div class="portfolio-text" style="margin-right: 100px;">
+                    <h3>網頁程式設計</h3>
+                    <p>
+                        主題:夜店官網<br/>
+                        開發工具:Adobe Dreamweaver<br/>
+                        語法:HTML/CSS/JAVASCRIPT
+
+                    </p>
+                </div>
+            </div>
+            <div 
+            class="portfolio"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="1000"
+            >
+                <img src="images/04.JPG" width="600px" height="400px" style="margin-right: 300px;">
+                <div class="portfolio-text" style="margin-right: 100px;">
+                    <h3>平面遊戲設計</h3>
+                    <p>
+                        主題:俄羅斯輪盤<br/>
+                        開發工具:Adobe Animate<br/>
+                        語法:ActionScript
+                    </p>
+                </div>
+            </div>
+            <div 
+            class="portfolio"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="1000">
+                <img src="images/05.JPG" width="600px" height="400px" style="margin-right: 300px;">
+                <div class="portfolio-text" style="margin-right: 100px;">
+                    <h3>POS系統</h3>
+                    <p>
+                        主題:酒吧POS<br/>
+                        開發工具:記事本<br/>
+                        語法:JAVA/MySQL
+                    </p>
+                </div>
+            </div>
+            <div 
+            class="portfolio"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration ="1000"
+            >
+                <img src="images/06.jpg" width="300px" height="400px" style="margin-right: 300px;">
+                <div class="portfolio-text" style="margin-right: 100px;" >
+                    <h3>專題</h3>
+                    <p>
+                        主題:AI BOX<br/>
+                        開發工具:Visual Studio Code<br/>
+                        語法:PYTHON
+                    </p>
+                </div>
+            </div>             
+            
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Copyright © 2024 JIANWEI All Rights Reserved.</p>
+    </footer>
+
+
+    <!-- 導入jQuery和bootstrap的javascript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--AOS初始化-->
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
